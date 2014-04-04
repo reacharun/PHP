@@ -6,19 +6,21 @@
  */
 
 // define serial attributes
- $numberOfChars = 4;
- $lengthOfSerial = 5;
+ $numberOfChars = 4; # (XXXX)
+ $lengthOfSerial = 3; # (XXXX - XXXX - XXXX)
  
- $mySerialNumber = generateSerials($numberOfChars,$lengthOfSerial);
+ $mySerialNumber = generateSerials($numberOfChars, $lengthOfSerial);
  
  
 echo "Your serial # is " . $mySerialNumber;
 
 
 
+
+
 // create a series of random serial numbers
 
-function generateSerials($numberOfChars,$lengthOfSerial) {
+function generateSerials ($numberOfChars,$lengthOfSerial) {
 
 
 $tokens = "0123456789ABCDEFGHIJKLMNOPQRSTUVWZY";
@@ -45,5 +47,3 @@ for ($i = 0; $i < $lengthOfSerial; $i++) {
 }
 //
 
-
-?>
